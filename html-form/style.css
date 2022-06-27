@@ -1,0 +1,72 @@
+fieldset {
+  border: 0;
+}
+
+form {
+  margin: 0 auto;
+  width: 600px;
+
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: ;
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+form div + div {
+  margin-top: 1em;
+}
+
+label {
+  display: inline-block;
+  width: 90px;
+  text-align: right;
+}
+
+legend {
+  border-bottom: 1px solid black;
+}
+
+input,
+textarea {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 425px;
+  box-sizing: border-box;
+  border: 1px solid #999;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #000;
+}
+
+textarea {
+  vertical-align: top;
+  height: 5em;
+}
+
+select {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 425px;
+}
+
+button {
+  margin-left: 0.5em;
+}
+
+@media screen and (max-width: 650px) {
+  form {
+    width: auto;
+  }
+  label {
+    display: block;
+    margin: 0;
+    text-align: left;
+    width: auto;
+  }
+  input,
+  select,
+  textarea {
+    width: 100%;
+  }
+}

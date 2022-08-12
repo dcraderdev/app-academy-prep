@@ -1,126 +1,92 @@
-/* begin notes */
+/* begin notes
 
-/* begin notes */
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Practice Stylings</title>
-    <link rel="stylesheet"
-        href="main.css">
-</head>
-
-<body class="not-loogo">
-    <header class="logo">
-<body class="bg">
-    <header class="bg">
-        <h1>Practice Stylings</h1>
-    </header>
-    <div class="page">
-        <div class="content">
-            <div class="story-box">
-                <h2>~Feathers in the Wind~</h2>
-                <p><em>A retelling of a European Jewish wisdom tale.</em></p>
-                <p class="bg"><em>A retelling of a European Jewish wisdom tale.</em></p>
-
-                <p>Once there was a man whom the entire village knew to be a gossip.
-                <p class="bg">Once there was a man whom the entire village knew to be a gossip.
-                    He could not wait to share the juiciest piece of gossip with
-                    whoever would listen. It did not matter to him if the stories he
-                    spread were true, or not—he never stopped to ask.</p>
-@@ -42,7 +42,10 @@ <h2>~Feathers in the Wind~</h2>
-                    integrity.</p>
-            </div>
-        </div>
-        <div class="logo"></div>
-        <div class="two logo here"></div>
-    </div>
-    <div style="height: 30px; background-color: gray; color: white;">
-        Hey
-    </div>
-</body>
-
-  44  
-main.css
-@@ -1,3 +1,5 @@
-* {background-color: coral;}
-
-h1 {
-    font-size: 40px;
-    font-family: "Gill Sans", sans-serif;
-@@ -19,6 +21,8 @@ h2 {
-    color: ;
-    background-color: ;
-    text-align: center;
-    border: 5px solid black;
-    border-color: aqua;
-}
-p {
-    font-family: ;
-@@ -28,6 +32,8 @@ p {
-    color: ;
-    background-color: ;
-    text-align: center;
-    border: 5px solid black;
-    border-color: aqua;
-
+#pond {
+  display: flex;
+  justify-content: ;
+  align-items: ;
+  flex-direction: column;
 }
 
-@@ -39,21 +45,53 @@ p em {
-    font-weight: ;
-    color: ;
-    background-color: ;
-    border: 5px;
-    border-color: aqua;
-    /* text-align: left; */
-}
+/* ~Options for flexbox~ */
+/* 
+display: flex;
 
-/* html,body {height: 100%;} */
+justify-content: ; 
+/* Positional alignment */
+justify-content: center; /* Pack items around the center */
+justify-content: start; /* Pack items from the start */
+justify-content: end; /* Pack items from the end */
+justify-content: flex-start; /* Pack flex items from the start */
+justify-content: flex-end; /* Pack flex items from the end */
+justify-content: left; /* Pack items from the left */
+justify-content: right; /* Pack items from the right */
 
-.logo {
-    background-size: contain;
-    border: 5px;
-    border-color: aqua;
-    background-size: cover;
-    opacity: 1;
-    background-blend-mode: ;
-    background-image: url(https://appacademy.github.io/styleguide/assets/logo/logo-emblem-black-1000.png);
-    background-color: rgb(212, 57, 1);
+/* Baseline alignment */
+/* justify-content does not take baseline values */
 
-    background-color: coral;
-    background-position: bottom;
-    background-repeat: round;
-    height: 200px;
-    width: 200px;
-    align-text: center;
-    flex-wrap: wrap;
-}
+/* Normal alignment */
+justify-content: normal;
 
+/* Distributed alignment */
+justify-content: space-between; /* Distribute items evenly
+                                   The first item is flush with the start,
+                                   the last is flush with the end */
+justify-content: space-around; /* Distribute items evenly
+                                   Items have a half-size space
+                                   on either end */
+justify-content: space-evenly; /* Distribute items evenly
+                                   Items have equal space around them */
+justify-content: stretch; /* Distribute items evenly
+                                   Stretch 'auto'-sized items to fit
+                                   the container */
 
+/* Overflow alignment */
+justify-content: safe center;
+justify-content: unsafe center;
 
-.bg {
-    background-size:cover;
-    opacity: 1;
-    background-blend-mode: ;
-    background-image:
-    background-color: green;
-    border: 5px solid black;
-    border-color: aqua;
-}
-/* hello */
+/* Global values */
+justify-content: inherit;
+justify-content: initial;
+justify-content: revert;
+justify-content: revert-layer;
+justify-content: unset;
 
-.two {
-    background-image: url(https://appacademy.github.io/styleguide/assets/logo/logo-emblem-black-1000.png);
-    background-repeat: repeat;
-    width: 100%;
-    height: 100px;
-}
-.here {
-    /* width: 100%;
-    height: 100%; */
-    background-repeat:repeat-x;
-    border: 5px solid black;
-    border-color: rgb(255, 55, 0);
-    align-self: center;
-}
+align-items: ;
+/* Basic keywords */
+align-items: normal;
+align-items: stretch;
+
+/* Positional alignment */
+/* align-items does not take left and right values */
+align-items: center; /* Pack items around the center */
+align-items: start; /* Pack items from the start */
+align-items: end; /* Pack items from the end */
+align-items: flex-start; /* Pack flex items from the start */
+align-items: flex-end; /* Pack flex items from the end */
+
+/* Baseline alignment */
+align-items: baseline;
+align-items: first baseline;
+align-items: last baseline; /* Overflow alignment (for positional alignment only) */
+align-items: safe center;
+align-items: unsafe center;
+
+/* Global values */
+align-items: inherit;
+align-items: initial;
+align-items: revert;
+align-items: revert-layer;
+align-items: unset;
+
+flex-direction: ;
+/* The direction text is laid out in a line */
+flex-direction: row;
+
+/* Like <row>, but reversed */
+flex-direction: row-reverse;
+
+/* The direction in which lines of text are stacked */
+flex-direction: column;
+
+/* Like <column>, but reversed */
+flex-direction: column-reverse;

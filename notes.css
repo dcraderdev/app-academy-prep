@@ -1,1 +1,126 @@
 /* begin notes */
+
+/* begin notes */
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Practice Stylings</title>
+    <link rel="stylesheet"
+        href="main.css">
+</head>
+
+<body class="not-loogo">
+    <header class="logo">
+<body class="bg">
+    <header class="bg">
+        <h1>Practice Stylings</h1>
+    </header>
+    <div class="page">
+        <div class="content">
+            <div class="story-box">
+                <h2>~Feathers in the Wind~</h2>
+                <p><em>A retelling of a European Jewish wisdom tale.</em></p>
+                <p class="bg"><em>A retelling of a European Jewish wisdom tale.</em></p>
+
+                <p>Once there was a man whom the entire village knew to be a gossip.
+                <p class="bg">Once there was a man whom the entire village knew to be a gossip.
+                    He could not wait to share the juiciest piece of gossip with
+                    whoever would listen. It did not matter to him if the stories he
+                    spread were true, or not—he never stopped to ask.</p>
+@@ -42,7 +42,10 @@ <h2>~Feathers in the Wind~</h2>
+                    integrity.</p>
+            </div>
+        </div>
+        <div class="logo"></div>
+        <div class="two logo here"></div>
+    </div>
+    <div style="height: 30px; background-color: gray; color: white;">
+        Hey
+    </div>
+</body>
+
+  44  
+main.css
+@@ -1,3 +1,5 @@
+* {background-color: coral;}
+
+h1 {
+    font-size: 40px;
+    font-family: "Gill Sans", sans-serif;
+@@ -19,6 +21,8 @@ h2 {
+    color: ;
+    background-color: ;
+    text-align: center;
+    border: 5px solid black;
+    border-color: aqua;
+}
+p {
+    font-family: ;
+@@ -28,6 +32,8 @@ p {
+    color: ;
+    background-color: ;
+    text-align: center;
+    border: 5px solid black;
+    border-color: aqua;
+
+}
+
+@@ -39,21 +45,53 @@ p em {
+    font-weight: ;
+    color: ;
+    background-color: ;
+    border: 5px;
+    border-color: aqua;
+    /* text-align: left; */
+}
+
+/* html,body {height: 100%;} */
+
+.logo {
+    background-size: contain;
+    border: 5px;
+    border-color: aqua;
+    background-size: cover;
+    opacity: 1;
+    background-blend-mode: ;
+    background-image: url(https://appacademy.github.io/styleguide/assets/logo/logo-emblem-black-1000.png);
+    background-color: rgb(212, 57, 1);
+
+    background-color: coral;
+    background-position: bottom;
+    background-repeat: round;
+    height: 200px;
+    width: 200px;
+    align-text: center;
+    flex-wrap: wrap;
+}
+
+
+
+.bg {
+    background-size:cover;
+    opacity: 1;
+    background-blend-mode: ;
+    background-image:
+    background-color: green;
+    border: 5px solid black;
+    border-color: aqua;
+}
+/* hello */
+
+.two {
+    background-image: url(https://appacademy.github.io/styleguide/assets/logo/logo-emblem-black-1000.png);
+    background-repeat: repeat;
+    width: 100%;
+    height: 100px;
+}
+.here {
+    /* width: 100%;
+    height: 100%; */
+    background-repeat:repeat-x;
+    border: 5px solid black;
+    border-color: rgb(255, 55, 0);
+    align-self: center;
+}
